@@ -1,0 +1,18 @@
+--teleportscript made by rodizzy#0001
+--if you try to steal you will get banned in any game (has high protection) getnev()
+
+game:GetService("StarterGui"):SetCore("SendNotification", {
+    Title = "Credits";
+    Text = "Click script developed by rodizzy#0001";
+    })
+
+mouse = game.Players.LocalPlayer:GetMouse()
+tool = Instance.new("Tool")
+tool.RequiresHandle = false
+tool.Name = "Click mouse Teleport"
+tool.Activated:connect(function()
+local pos = mouse.Hit+Vector3.new(0,2.5,0)
+pos = CFrame.new(pos.X,pos.Y,pos.Z)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos
+end)
+tool.Parent = game.Players.LocalPlayer.Backpack
