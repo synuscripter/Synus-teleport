@@ -2,8 +2,8 @@
 --if you try to steal you will get banned in any game (has high protection) getnev()
 
 game:GetService("StarterGui"):SetCore("SendNotification", {
-    Title = "Credits";
-    Text = "Click script developed by rodizzy#0001";
+    Title = "discord server";
+    Text = "Discord.gg/4ku";
     })
 
 mouse = game.Players.LocalPlayer:GetMouse()
